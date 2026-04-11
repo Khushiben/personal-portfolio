@@ -87,13 +87,17 @@ I love building real-world applications that solve meaningful problems.
 I enjoy working with JavaScript and constantly learning new technologies to grow as a developer.
         </p>
 
-        <a className="nav-button" href="/resume.pdf" download>
-          <button>Download Resume</button>
-        </a>
+<a
+  className="nav-button"
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download
+>
+  <button>Download Resume</button>
+</a>
         </div>
         {/* RIGHT IMAGE */}
   <div className="home-right">
-    <img src="/khu18.jpg" alt="profile" />
+    <img src={`${import.meta.env.BASE_URL}khu18.jpg`} alt="profile" />
   </div>
 
       </section>
@@ -117,31 +121,31 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
   <h1>My Skills</h1>
   <div className="skills-container">
     <div className="skill">
-      <img src="/html.png" alt="HTML" />
+      <img src={`${import.meta.env.BASE_URL}html.png`} alt="HTML" />
       <p>HTML</p>
     </div>
     <div className="skill">
-      <img src="/css.png" alt="CSS" />
+      <img src={`${import.meta.env.BASE_URL}css.png`} alt="CSS" />
       <p>CSS</p>
     </div>
     <div className="skill">
-      <img src="/javascript.png" alt="JavaScript" />
+      <img src={`${import.meta.env.BASE_URL}javascript.png`} alt="JavaScript" />
       <p>JavaScript</p>
     </div>
     <div className="skill">
-      <img src="/react.png" alt="React" />
+      <img src={`${import.meta.env.BASE_URL}react.png`} alt="React" />
       <p>React</p>
     </div>
     <div className="skill">
-      <img src="/node1.png" alt="Node.js" />
+      <img src={`${import.meta.env.BASE_URL}node1.png`} alt="Node.js" />
       <p>Node.js</p>
     </div>
     <div className="skill">
-      <img src="/mongodb.png" alt="MongoDB" />
+      <img src={`${import.meta.env.BASE_URL}mongodb.png`} alt="MongoDB" />
       <p>MongoDB</p>
     </div>
      <div className="skill">
-      <img src="/sql.png" alt="MongoDB" />
+      <img src={`${import.meta.env.BASE_URL}sql.png`} alt="SQL" />
       <p>SQL</p>
     </div>
   </div>
