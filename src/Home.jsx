@@ -158,12 +158,9 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       <p>AgriDirect V2 is a modern agricultural supply chain platform that connects farmers, distributors, retailers, and consumers in a transparent ecosystem. It uses AI‑powered features, blockchain verification, and QR codes to ensure product authenticity and traceability. By reducing intermediaries, it helps farmers get fair prices while giving consumers confidence in the products they buy.</p>
     {/* GitHub Button :- link :- https://github.com/Khushiben/AgriDirect_V2.git target="_blank" */}
     
-  <a
-    href="/"
-    rel="noopener noreferrer"
-  >
+  
     <button className="nav-button">In Progress</button>
-  </a>
+  
 
     </div>
     <div className="pro">
