@@ -200,12 +200,15 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       <span className="contact-icon" aria-hidden="true">🔗</span>
       <span>LinkedIn</span>
     </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khushibenrana@gmail.com" target="_blank" className="nav-button">
-      <span className="contact-icon" aria-hidden="true">✉️</span>
-      <span>Email</span>
-    </a>
     <a
-      href="https://wa.me/9106453981"
+  href="mailto:khushibenrana@gmail.com?subject=Regarding%20Your%20Portfolio&body=Hello%20Khushi%2C"
+  className="nav-button"
+>
+  <span className="contact-icon">✉️</span>
+  <span>Email</span>
+</a>
+    <a
+      href="https://wa.me/919106453981?text=Hello%20Khushi%2C%20I%20saw%20your%20portfolio"
       target="_blank"
       rel="noopener noreferrer"
       className="nav-button"
