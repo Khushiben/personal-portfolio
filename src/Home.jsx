@@ -181,12 +181,9 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       <h1>CampusChain</h1>
       <p>CampusChain Marketplace is a decentralized college marketplace Web3 dApp that enables students to securely list, buy, and sell items within their campus community. By leveraging blockchain technology, the platform ensures transparent ownership, crypto‑secured peer‑to‑peer transactions, and trustless interactions without intermediaries. This student‑focused marketplace brings modern web3 commerce to campus life with a secure, transparent, and decentralized buying and selling experience.</p>
     {/* GitHub Button  link :- https://github.com/Khushiben/CampusChain_Marketplace.git target="_blank"*/}
-  <a
-    href="/"
-    rel="noopener noreferrer"
-  >
+  
     <button className="nav-button">In Progress</button>
-  </a>
+  
     </div>
   </div>
 </section>
