@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function Home() {
-  const roles = ["Web Developer", "MERN Stack Enthusiast"];
+  const roles = ["Web Developer", "MERN Stack Enthusiast","Tech Enthusiast"];
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
@@ -65,8 +65,10 @@ function Home() {
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <button className="nav-button" onClick={() => scrollToSection("home")}>Home</button>
           <button className="nav-button" onClick={() => scrollToSection("about")}>About</button>
+          <button className="nav-button" onClick={() => scrollToSection("education")}>Education</button>
           <button className="nav-button" onClick={() => scrollToSection("skills")}>Skills</button>
           <button className="nav-button" onClick={() => scrollToSection("projects")}>Projects</button>
+          <button className="nav-button" onClick={() => scrollToSection("certifications")}>Certifications</button>
           <button className="nav-button" onClick={() => scrollToSection("contact")}>Contact</button>
         </ul>
       </nav>
@@ -77,12 +79,12 @@ function Home() {
         <h1>Hi, I'm Khushi Rana 👋</h1>
 
         <h2>
-          I am <span className="typing">{text}</span>
+          I'm an aspiring <span className="typing">{text}</span>
           <span className="cursor">|</span>
         </h2>
 
         <p className="home-content">
-I am passionate about web development, especially MERN stack development.
+I am a 3rd year Computer Engineering student passionate about web development, with a strong focus on MERN stack development.
 I love building real-world applications that solve meaningful problems.
 I enjoy working with JavaScript and constantly learning new technologies to grow as a developer.
         </p>
@@ -105,9 +107,9 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       {/* ABOUT SECTION */}
       <section id="about" className="section about">
         <div className="about-content">
-          <h1>About Me</h1>
+          <h1 style={{ borderBottom: "3px solid #00bcd4" }}>About Me</h1>
           <p>
-            Hello, I'm Khushi Rana, a passionate MERN Stack Developer and tech enthusiast. I actively participate in hackathons, including SIH 2025, which have helped me sharpen my problem-solving and teamwork skills.
+            I am Khushi Rana, a 3rd year Computer Engineering student and aspiring MERN Stack Developer with a strong interest in web development. I actively participate in hackathons, including SIH 2025, which have enhanced my problem-solving and teamwork abilities.
           </p>
           <p>
             I have hands-on experience building full-stack web applications and projects that focus on practical solutions. With a strong foundation in JavaScript, React, Node.js, and MongoDB, I enjoy turning ideas into functional and scalable products.
@@ -117,6 +119,30 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
           </p>
         </div>
       </section>
+      {/* EDUCATION SECTION */}
+<section id="education" className="section education">
+  <h1>My Education</h1>
+
+  <div className="edu-card">
+    <h2>B.Tech in Computer Engineering</h2>
+    <p>Madhuben and Bhanubhai Patel Institute of Technology, New V.V. Nagar</p>
+
+    <div className="edu-details">
+      <h3>10th Percentage: 94.00%</h3>
+      <h3>12th Percentage: 76.76%</h3>
+      <h3>Last Semester SGPA: 9.81</h3>
+      <h3>Current CGPA: 9.50</h3>
+    </div>
+
+    <button className="nav-button"
+      onClick={() =>
+        window.open(`${import.meta.env.BASE_URL}result.png`)
+      }
+    >
+      View Latest Result
+    </button>
+  </div>
+</section>
       <section id="skills" className="section skills">
   <h1>My Skills</h1>
   <div className="skills-container">
@@ -150,11 +176,11 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     </div>
   </div>
 </section>
-<section id="projects" className="projects">
+<section id="projects" className="section projects">
   <h1>My Projects</h1>
   <div className="projects-grid">
     <div className="pro">
-      <h1>AgriDirect</h1>
+      <h2>AgriDirect</h2>
       <p>AgriDirect V2 is a modern agricultural supply chain platform that connects farmers, distributors, retailers, and consumers in a transparent ecosystem. It uses AI‑powered features, blockchain verification, and QR codes to ensure product authenticity and traceability. By reducing intermediaries, it helps farmers get fair prices while giving consumers confidence in the products they buy.</p>
     {/* GitHub Button :- link :- https://github.com/Khushiben/AgriDirect_V2.git target="_blank" */}
     
@@ -164,7 +190,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
 
     </div>
     <div className="pro">
-      <h1>Study Buddy - A smart Study Companion</h1>
+      <h2>Study Buddy - A smart Study Companion</h2>
       <p>Study Buddy is a smart study companion that helps students organize, track, and improve their study habits. It integrates study timers, flashcards, note sharing, deadline reminders, collaborative study circles, and aptitude modules into a single student‑friendly platform to boost focus, consistency, and academic performance.</p>
     {/* GitHub Button */}
   <a
@@ -178,7 +204,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     </div>
     
     <div className="pro">
-      <h1>CampusChain</h1>
+      <h2>CampusChain</h2>
       <p>CampusChain Marketplace is a decentralized college marketplace Web3 dApp that enables students to securely list, buy, and sell items within their campus community. By leveraging blockchain technology, the platform ensures transparent ownership, crypto‑secured peer‑to‑peer transactions, and trustless interactions without intermediaries. This student‑focused marketplace brings modern web3 commerce to campus life with a secure, transparent, and decentralized buying and selling experience.</p>
     {/* GitHub Button  link :- https://github.com/Khushiben/CampusChain_Marketplace.git target="_blank"*/}
   
@@ -187,7 +213,57 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     </div>
   </div>
 </section>
-<section id="contact" className="contact">
+{/* CERTIFICATIONS SECTION */}
+<section id="certifications" className="section certifications">
+  <h1>My Certifications</h1>
+
+  <div className="cert-container">
+
+    {/* SIH */}
+    <div className="cert-card">
+      <h2>Smart India Hackathon (SIH) 2025</h2>
+      <p>
+Participated in Smart India Hackathon (SIH) 2025 and attended the Grand Finale at Sri Sri University, where I collaborated with a team to develop a real-world solution. Worked on the project "AgriDirect" (details in Projects section).
+</p>
+      <button className="nav-button" onClick={() => window.open(`${import.meta.env.BASE_URL}sih18.jpeg`)}>
+        View Certificate
+      </button>
+    </div>
+
+    {/* HACKX */}
+    <div className="cert-card">
+      <h2>HackX 2025</h2>
+      <p>
+Participated in HackX 2025 at Nirma University, Ahmedabad, where I collaborated with a team to develop innovative solutions. Contributed to the project "AgriDirect" (see Projects section).
+</p>
+      <button className="nav-button" onClick={() => window.open(`${import.meta.env.BASE_URL}hackx18.jpeg`)}>
+        View Certificate
+      </button>
+    </div>
+
+    {/* PARANOX */}
+    <div className="cert-card">
+      <h2>Paranox 2.0</h2>
+      <p>
+Selected among the top 200 teams for Paranox 2.0 hackathon, demonstrating strong problem-solving and development skills.
+</p>
+      <button className="nav-button" onClick={() => window.open(`${import.meta.env.BASE_URL}paranoc18.jpeg`)}>
+        View Certificate
+      </button>
+    </div>
+    {/* CVMU Hackathon */}
+    <div className="cert-card">
+      <h2>CVMU Hackathon 2025 & 2026</h2>
+      <p>
+Participated in CVMU Hackathon 2025 with the project "Discount Finder Web" and in CVMU Hackathon 2026 with "AgriDirect", enhancing problem-solving, teamwork, and development skills.</p>
+      <button className="nav-button" onClick={() => window.open(`${import.meta.env.BASE_URL}cvmu.jpeg`)}>
+        View Certificate
+      </button>
+    </div>
+
+  </div>
+</section>
+<section id="contact" className="section contact">
   <h1>Contact Me</h1>
   <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hi! You can contact me through the following channels:</p>
   <div className="contact-links">

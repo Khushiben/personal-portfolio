@@ -107,6 +107,13 @@ body {
   width: 100%;
   left: 0;
 }
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+  border-bottom: 3px solid #00bcd4;
+  padding-bottom: 6px;
+}
 section button {
   background: transparent;
   font-size: 1.5rem;
@@ -150,6 +157,7 @@ section h1, section h2{
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 .home-left {
   width: 50%;
   padding: 15px 5px 5px 80px;
@@ -526,3 +534,167 @@ section {
     align-items: center;
   }
 }
+/* Tablet */
+@media (max-width: 992px) {
+  .cert-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Certifications Section */
+.certifications {
+  display: block;
+  padding: 4rem 2rem;
+  background-color: #191f43;   /* same as projects */
+  color: white;
+  text-align: center;
+  min-height: auto;
+}
+
+/* GRID SAME AS PROJECTS */
+.cert-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  grid-auto-rows: auto;
+  align-items: stretch;
+}
+
+/* RESPONSIVE SAME AS PROJECTS */
+@media (max-width: 1024px) {
+  .cert-container {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD SAME STYLE AS PROJECTS */
+.cert-card {
+  width: 100%;
+  min-height: 320px;
+  background-color: #1f254f;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* HOVER EFFECT SAME */
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* TITLE */
+.cert-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* TEXT SAME AS PROJECT */
+.cert-card p {
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+/* Education Section */
+.education {
+  display: block;
+  padding: 4rem 2rem;
+  background-color: #191f43;   /* match projects */
+  color: white;
+  text-align: center;
+}
+
+/* GRID SYSTEM */
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* 🔥 FIRST CARD FULL WIDTH */
+.edu-card:first-child {
+  grid-column: 1 / -1;   /* takes full width */
+}
+
+/* 🔥 REMAINING CARDS IN GRID */
+@media (min-width: 768px) {
+  .education-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .education-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.edu-card {
+  width: 60%;
+  margin: 0 auto;   /* 🔥 THIS LINE CENTERS IT */
+
+  min-height: 250px;
+  background-color: #1f254f;
+  padding: 2rem;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* HOVER SAME AS PROJECT */
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.edu-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* TEXT */
+.edu-card p {
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* DETAILS */
+.edu-details h3 {
+  font-size: 1.3rem;
+  margin: 0.3rem 0;
+}
+
+
+
