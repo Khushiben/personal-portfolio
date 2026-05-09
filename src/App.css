@@ -696,5 +696,12 @@ section {
   margin: 0.3rem 0;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .edu-card {
+    width: 100%;
+  }
+}
+
 
 

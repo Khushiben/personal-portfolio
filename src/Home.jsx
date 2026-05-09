@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 function Home() {
   const roles = ["Web Developer", "MERN Stack Enthusiast","Tech Enthusiast"];
@@ -47,6 +49,14 @@ function Home() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  useEffect(()=> {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: "ease-in-out",
+    });
+    AOS.refresh();
+},[]);
 
   return (
     <>
@@ -74,7 +84,7 @@ function Home() {
       </nav>
 
       {/* HOME SECTION */}
-      <section id="home" className="section home">
+      <section id="home" className="section home" data-aos="fade-right">
         <div className="home-left">
         <h1>Hi, I'm Khushi Rana 👋</h1>
 
@@ -105,7 +115,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       </section>
 
       {/* ABOUT SECTION */}
-      <section id="about" className="section about">
+      <section id="about" className="section about" data-aos="fade-right">
         <div className="about-content">
           <h1 style={{ borderBottom: "3px solid #00bcd4" }}>About Me</h1>
           <p>
@@ -120,7 +130,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
         </div>
       </section>
       {/* EDUCATION SECTION */}
-<section id="education" className="section education">
+<section id="education" className="section education" data-aos="fade-right">
   <h1>My Education</h1>
 
   <div className="edu-card">
@@ -143,7 +153,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     </button>
   </div>
 </section>
-      <section id="skills" className="section skills">
+      <section id="skills" className="section skills" data-aos="fade-right">
   <h1>My Skills</h1>
   <div className="skills-container">
     <div className="skill">
@@ -176,7 +186,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     </div>
   </div>
 </section>
-<section id="projects" className="section projects">
+<section id="projects" className="section projects" data-aos="fade-right">
   <h1>My Projects</h1>
   <div className="projects-grid">
     <div className="pro">
@@ -214,7 +224,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
   </div>
 </section>
 {/* CERTIFICATIONS SECTION */}
-<section id="certifications" className="section certifications">
+<section id="certifications" className="section certifications" data-aos="fade-right">
   <h1>My Certifications</h1>
 
   <div className="cert-container">
@@ -263,7 +273,7 @@ Participated in CVMU Hackathon 2025 with the project "Discount Finder Web" and i
 
   </div>
 </section>
-<section id="contact" className="section contact">
+<section id="contact" className="section contact" data-aos="fade-right">
   <h1>Contact Me</h1>
   <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hi! You can contact me through the following channels:</p>
   <div className="contact-links">
