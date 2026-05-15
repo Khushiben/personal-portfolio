@@ -109,7 +109,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
         </div>
         {/* RIGHT IMAGE */}
   <div className="home-right">
-    <img src={`${import.meta.env.BASE_URL}khu18.jpg`} alt="profile" />
+    <img src={`${import.meta.env.BASE_URL}k181818.jpeg`} alt="profile" />
   </div>
 
       </section>
