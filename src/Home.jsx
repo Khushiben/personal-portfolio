@@ -63,7 +63,7 @@ function Home() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
-  <span className="logo-icon">KR</span> Khushi Rana
+  <span className="logo-icon">KR</span> Khushiben Rana
 </div>
 
         <div className="menu-toggle" onClick={toggleMenu}>
@@ -86,7 +86,7 @@ function Home() {
       {/* HOME SECTION */}
       <section id="home" className="section home" data-aos="fade-right">
         <div className="home-left">
-        <h1>Hi, I'm Khushi Rana 👋</h1>
+        <h1>Hi, I'm Khushiben Rana 👋</h1>
 
         <h2>
           I'm an aspiring <span className="typing">{text}</span>
@@ -119,7 +119,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
         <div className="about-content">
           <h1 style={{ borderBottom: "3px solid #00bcd4" }}>About Me</h1>
           <p>
-            I am Khushi Rana, a 3rd year Computer Engineering student and aspiring MERN Stack Developer with a strong interest in web development. I actively participate in hackathons, including SIH 2025, which have enhanced my problem-solving and teamwork abilities.
+            I am Khushiben Rana, a 3rd year Computer Engineering student and aspiring MERN Stack Developer with a strong interest in web development. I actively participate in hackathons, including SIH 2025, which have enhanced my problem-solving and teamwork abilities.
           </p>
           <p>
             I have hands-on experience building full-stack web applications and projects that focus on practical solutions. With a strong foundation in JavaScript, React, Node.js, and MongoDB, I enjoy turning ideas into functional and scalable products.
