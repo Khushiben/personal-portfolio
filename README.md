@@ -1,16 +1,59 @@
-# React + Vite
+# Khushiben Rana Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website showcasing my profile, skills, projects, education, and contact information.
 
-Currently, two official plugins are available:
+## Features
+- Responsive design
+- About Me section
+- Skills section
+- Projects section
+- Resume download
+- Contact form
+- Social media links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React
+- Vite
+- HTML
+- CSS
+- JavaScript
 
-## React Compiler
+## Live Demo
+https://khushiben.github.io/personal-portfolio/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## GitHub Repository
+https://github.com/Khushiben/personal-portfolio.git
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone [GitHub Repository Link]
+```
+
+2. Open the project and install dependencies:
+
+```bash
+cd personal-portfolio
+npm install
+```
+
+3. Run locally:
+
+```bash
+npm run dev
+```
+
+## Folder Structure
+- public/
+- src/
+- index.html
+- package.json
+- README.md
+
+## Author
+- Name: Khushiben Rana
+- LinkedIn: https://www.linkedin.com/in/khushiben-rana-7166082bb
+
+## License
+This project is licensed under the MIT License.
