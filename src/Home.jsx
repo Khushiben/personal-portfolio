@@ -140,7 +140,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     <div className="edu-details">
       <h3>10th Percentage: 94.00%</h3>
       <h3>12th Percentage: 76.76%</h3>
-      <h3>Last Semester SGPA: 9.81</h3>
+      <h3>Last Semester SGPA: 9.83</h3>
       <h3>Current CGPA: 9.50</h3>
     </div>
 
