@@ -66,14 +66,28 @@ function Home() {
   <span className="logo-icon">KR</span> Khushiben Rana
 </div>
 
-        <div className="menu-toggle" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+       <div className="menu-toggle" onClick={toggleMenu}>
+  {menuOpen ? (
+    <span className="close-icon">&times;</span>
+  ) : (
+    <>
+      <span></span>
+      <span></span>
+      <span></span>
+    </>
+  )}
+</div>
 
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <button className="nav-button" onClick={() => scrollToSection("home")}>Home</button>
+          <button
+  className="nav-button"
+  onClick={() => {
+    scrollToSection("home");
+    setMenuOpen(false);
+  }}
+>
+  Home
+</button>
           <button className="nav-button" onClick={() => scrollToSection("about")}>About</button>
           <button className="nav-button" onClick={() => scrollToSection("education")}>Education</button>
           <button className="nav-button" onClick={() => scrollToSection("skills")}>Skills</button>
@@ -131,17 +145,17 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       </section>
       {/* EDUCATION SECTION */}
 <section id="education" className="section education" data-aos="fade-right">
-  <h1>My Education</h1>
+  <h1>Education</h1>
 
   <div className="edu-card">
-    <h2>B.Tech in Computer Engineering</h2>
+    <h2>B.Tech in Computer Engineering (2023-2027)</h2>
     <p>Madhuben and Bhanubhai Patel Institute of Technology, New V.V. Nagar</p>
 
     <div className="edu-details">
       <h3>10th Percentage: 94.00%</h3>
       <h3>12th Percentage: 76.76%</h3>
-      <h3>Last Semester SGPA: 9.83</h3>
-      <h3>Current CGPA: 9.50</h3>
+      <h3>Last Semester SGPA: 9.43</h3>
+      <h3>Current CGPA: 9.49</h3>
     </div>
 
     <button className="nav-button"
@@ -149,12 +163,12 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
         window.open(`${import.meta.env.BASE_URL}result.png`)
       }
     >
-      View Latest Result
+      View Latest Semester Result
     </button>
   </div>
 </section>
       <section id="skills" className="section skills" data-aos="fade-right">
-  <h1>My Skills</h1>
+  <h1>Technical Skills</h1>
   <div className="skills-container">
     <div className="skill">
       <img src={`${import.meta.env.BASE_URL}html.png`} alt="HTML" />
@@ -177,6 +191,10 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       <p>Node.js</p>
     </div>
     <div className="skill">
+  <img src={`${import.meta.env.BASE_URL}express.png`} alt="Express.js" />
+  <p>Express.js</p>
+</div>
+    <div className="skill">
       <img src={`${import.meta.env.BASE_URL}mongodb.png`} alt="MongoDB" />
       <p>MongoDB</p>
     </div>
@@ -184,14 +202,14 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
       <img src={`${import.meta.env.BASE_URL}sql.png`} alt="SQL" />
       <p>SQL</p>
     </div>
-  </div>
+     </div>
 </section>
 <section id="projects" className="section projects" data-aos="fade-right">
   <h1>My Projects</h1>
   <div className="projects-grid">
     <div className="pro">
       <h2>AgriDirect</h2>
-      <p>AgriDirect V2 is a modern agricultural supply chain platform that connects farmers, distributors, retailers, and consumers in a transparent ecosystem. It uses AI‑powered features, blockchain verification, and QR codes to ensure product authenticity and traceability. By reducing intermediaries, it helps farmers get fair prices while giving consumers confidence in the products they buy.</p>
+      <p>AgriDirect is a modern agricultural supply chain platform that connects farmers, distributors, retailers, and consumers in a transparent ecosystem. It uses AI‑powered features, blockchain verification, and QR codes to ensure product authenticity and traceability. By reducing intermediaries, it helps farmers get fair prices while giving consumers confidence in the products they buy.</p>
     {/* GitHub Button :- link :- https://github.com/Khushiben/AgriDirect_V2.git target="_blank" */}
     
   
@@ -221,6 +239,22 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
     <button className="nav-button">In Progress</button>
   
     </div>
+   <div className="pro">
+  <h2>SeeknCart – Your Smart Discount Finder</h2>
+
+  <p>
+    SeeknCart is a smart shopping assistant that helps users find the best product deals by comparing prices from different e-commerce platforms. It offers an intuitive interface for product discovery, price comparison, and detailed product insights, enabling shoppers to make informed purchasing decisions while saving both time and money.
+  </p>
+
+  {/* GitHub Button */}
+  <a
+    href="https://github.com/Khushiben/SeeknCart_website.git"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="nav-button">View on GitHub</button>
+  </a>
+</div> 
   </div>
 </section>
 {/* CERTIFICATIONS SECTION */}
@@ -265,7 +299,7 @@ Selected among the top 200 teams for Paranox 2.0 hackathon, demonstrating strong
     <div className="cert-card">
       <h2>CVMU Hackathon 2025 & 2026</h2>
       <p>
-Participated in CVMU Hackathon 2025 with the project "Discount Finder Web" and in CVMU Hackathon 2026 with "AgriDirect", enhancing problem-solving, teamwork, and development skills.</p>
+Participated in CVMU Hackathon 2025 with the project "SeeknCart – Your Smart Discount Finder" and in CVMU Hackathon 2026 with "AgriDirect", enhancing problem-solving, teamwork, and development skills.</p>
       <button className="nav-button" onClick={() => window.open(`${import.meta.env.BASE_URL}cvmu.jpeg`)}>
         View Certificate
       </button>
