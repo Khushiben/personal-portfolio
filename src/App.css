@@ -130,18 +130,19 @@ body::before {
   border: 2px solid transparent;
   color: #e5e7eb;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 900;
   padding: 8px 18px 5px 18px;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  font-weight: 900;
-  font-size: medium;
-  letter-spacing: 0.5px; /* thoda spacing deta hai premium look ke liye */
+  letter-spacing: 0.5px;
 }
 
-/* Hover Effect */
+/* =========================================================
+   HOVER EFFECT — YOUR ORIGINAL EFFECT
+   ========================================================= */
+
 .nav-button:hover {
   color: #fff;
   background: linear-gradient(135deg, #3b82f6, #9333ea);
@@ -149,26 +150,126 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* Click Effect */
+/* =========================================================
+   CLICK EFFECT — YOUR ORIGINAL EFFECT
+   ========================================================= */
+
 .nav-button:active {
   transform: scale(0.95);
 }
 
-/* Underline Animation */
+/* =========================================================
+   AUTOMATIC UNDERLINE ANIMATION
+   Draw → Full Line → Disappear → Pause → Repeat
+   ========================================================= */
+
 .nav-button::after {
   content: "";
   position: absolute;
+
   width: 0%;
   height: 2px;
+
   bottom: -4px;
-  left: 50%;
+  left: 0;
+
   background: #facc15;
+
+  /* 🔥 Automatic repeating animation */
+  animation: navUnderline 5s ease-in-out infinite;
+
+  /* Keep hover transition */
   transition: all 0.3s ease;
 }
 
+/* =========================================================
+   AUTOMATIC UNDERLINE KEYFRAMES
+   ========================================================= */
+
+@keyframes navUnderline {
+
+  /* Start: No underline */
+  0% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+
+  /* Small pause before drawing */
+  10% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+
+  /* Start drawing */
+  20% {
+    width: 25%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Continue drawing */
+  35% {
+    width: 60%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Full underline */
+  45% {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Hold full underline */
+  55% {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Start disappearing */
+  65% {
+    width: 60%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Almost gone */
+  72% {
+    width: 20%;
+    left: 0;
+    opacity: 0.7;
+  }
+
+  /* Completely disappeared */
+  78% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+
+  /* Pause before starting again */
+  100% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+/* =========================================================
+   HOVER UNDERLINE — YOUR ORIGINAL HOVER EFFECT
+   ========================================================= */
+
 .nav-button:hover::after {
+  /* Stop automatic animation while hovering */
+  animation: none;
+
   width: 100%;
   left: 0;
+  opacity: 1;
 }
 .section h1 {
   font-size: 2.5rem;
