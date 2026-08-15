@@ -115,7 +115,7 @@ I enjoy working with JavaScript and constantly learning new technologies to grow
 
 <a
   className="nav-button"
-  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  href={`${import.meta.env.BASE_URL}MBIT_CE_RanaKhushibenPareshbhai .pdf`}
   download
 >
   <button>Download Resume</button>
